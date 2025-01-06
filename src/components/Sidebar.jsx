@@ -10,7 +10,7 @@ import {
 import {
   MdSettings,
   MdOutlineDashboard,
-  MdAdminPanelSettings,
+  // MdAdminPanelSettings,
 } from "react-icons/md";
 import { BsBook } from "react-icons/bs";
 import { HiOutlineDocumentText } from "react-icons/hi"; // Icon for Lookup Tables
@@ -33,7 +33,7 @@ const Sidebar = () => {
       <nav>
         <ul>
           {/* Dashboard */}
-          <li>
+          {/* <li>
             <a
               href="#"
               className="flex items-center px-3 py-3 text-gray-700 hover:bg-gray-200"
@@ -41,7 +41,7 @@ const Sidebar = () => {
               <MdOutlineDashboard className="text-xl" />
               <span className="ml-3">Dashboard</span>
             </a>
-          </li>
+          </li> */}
 
           {/* Admin Section */}
           <li>
@@ -49,8 +49,8 @@ const Sidebar = () => {
               className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-200 cursor-pointer"
               onClick={() => setIsAdminOpen(!isAdminOpen)}
             >
-              <MdAdminPanelSettings className="text-xl" />
-              <span className="ml-3">Admin</span>
+              <MdOutlineDashboard className="text-xl" />
+              <span className="ml-3">Dashboard</span>
               <FaChevronRight
                 className={`ml-auto transform transition-transform ${
                   isAdminOpen ? "rotate-90" : ""
