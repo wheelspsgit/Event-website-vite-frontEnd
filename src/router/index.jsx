@@ -18,7 +18,7 @@ const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         {/* Fallback Route for 404 */}
-        <Route path="*" element={<NotFound />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </Router>
   );

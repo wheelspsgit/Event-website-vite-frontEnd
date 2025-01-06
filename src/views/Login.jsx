@@ -5,18 +5,17 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
-  const [error, setError] = useState(""); // For storing error messages
-  const [isLoading, setIsLoading] = useState(false); // For handling loading state
+  const [error, setError] = useState(""); 
+  const [isLoading, setIsLoading] = useState(false); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     // Reset errors and loading state
     setError("");
     setIsLoading(true);
 
     try {
-      const response = await axiosInstance.post("/api/v1/auth/login", {
+      const response = await axiosInstance.post("auth/login", {
         username,
         password,
       });
